@@ -1,0 +1,59 @@
+button {
+    display: inline-flex;
+    background: linear-gradient(214.84deg, rgb(15, 9, 68) 20.52%, rgb(9, 4, 50) 89.43%);
+    transition: background 1s;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: white;
+}
+
+button:hover {
+    background: linear-gradient(90deg, rgb(110, 42, 255) 0%, rgb(148, 98, 255) 100%);
+}
+
+#wrap {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    height: 100%;
+}
+
+#left, #right {
+    flex-grow: 1;
+    line-height: 30px;
+    width: 100%;
+}
+
+#localVideo, #remoteVideo {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.box {
+    width: 100%;
+}
+
+#userId {
+    display: none;
+}
+
+.user-item {
+    display: inline-flex;
+    cursor: pointer;
+    background: transparent;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transition: background 1s;
+    border: 1px solid rgb(110, 42, 255);
+}
+
+.user-item:hover {
+    background: rgb(110, 42, 255);
+}
+
+.user-item--touched {
+    background: linear-gradient(90deg, rgb(110, 42, 255) 0%, rgb(148, 98, 255) 100%);
+}
